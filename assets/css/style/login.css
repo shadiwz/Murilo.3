@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*edição do email*
+fieldset.ema{
+    width: 100%;
+    height: 100%;
+}
+
+fieldset.ema{
+    position: relative;
+    border: 8px black;
+}
+
+fieldset.ema h3{
+    opacity: 1;
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.50s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+fieldset.ema:hover h3{
+    opacity: 0;
+}
+*/
+#card-login {
+    margin-top: 30px;
+}
