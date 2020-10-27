@@ -3,22 +3,21 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../../../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../../../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Cadastrar Pessoa
+    Cadastrar Funcionário
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <!-- CSS Files -->
-  <link href="../../../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../../../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../../../../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
 <!-- CSS Just for demo purpose, don't include it in your project -->
-<link href="../../../assets/demo/demo.css" rel="stylesheet" />
-<link href="../../../assets/css/style/singin.css" rel="stylesheet" type="text/css"/>
+<link href="../../../../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -27,12 +26,12 @@
           <div class="logo">
             <a href="https://www.creative-tim.com" class="simple-text logo-mini">
               <div class="logo-image-small">
-                <img src="../../../assets/img/logo-small.png">
+                <img src="../../../../assets/img/logo-small.png">
               </div>
               <!-- <p>CT</p> -->
             </a>
             <a href="https://www.creative-tim.com" class="simple-text logo-normal">
-              MED-center principal
+              MED-center
               <!-- <div class="logo-image-big">
                 <img src="../../assets/img/logo-big.png">
               </div> -->
@@ -41,7 +40,7 @@
           <div class="sidebar-wrapper">
             <ul class="nav">
               <li>
-                <a href="../../dashboard.html">
+                <a href="../../../dashboard.html">
                   <i class="nc-icon nc-bank"></i>
                   <p>inicio</p>
                 </a>
@@ -65,13 +64,13 @@
                 </a>
               </li>
               <li class="active ">
-                <a href="./listUser.html">
+                <a href="../../listUser.html">
                   <i class="nc-icon nc-single-02"></i>
                   <p>perfil do usuário</p>
                 </a>
               </li>
               <li>
-                <a href="../companies/list.html">
+                <a href="../../../companies/list.html">
                   <i class="nc-icon nc-tile-56"></i>
                   <p>Empresas</p>
                 </a>
@@ -153,27 +152,27 @@
                 </li>
                 </ul>
             </div>
-            </div>
         </nav>
     <div class="container">
         <div class="row justify-content-center">
             <div class="card col-sm-12 " id="card-login">
                 <div class="card-header">
-                  <h3>Pessoa Física</h3>
+                  <h3>Funcionário</h3>
                 </div>
                 <div class="card-body">
                 <form>
                     <div class="form-row">
-                        <div class="col">
-                          <label for="inputName">Código</label>
-                          <input type="name" class="form-control" id="Name" placeholder="Insira seu Código de Perfil">
+                        <div class="form-group col-md-4">
+                          <label for="inputCode">Código</label>
+                          <input type="code" class="form-control" id="code" placeholder="Insira seu Código de Perfil">
                         </div>
-                        <div class="col">
-                            <label>Acesso as Informações da Empresa</label>
-                            <select for="active" class="form-control">
-                            <option selected> Nenhum</option>
-                              <option>Ativo</option>
-                            </select>
+                        <div class="form-group col-md-4">
+                            <label for="inputCodeEmp">Código da Empresa</label>
+                            <input type="code" class="form-control" id="code" placeholder="Insira o Codigo da Empresa">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCodeOp">Código Operacional</label>
+                            <input type="code" class="form-control" id="code" placeholder="Insira o Codigo Operacional">
                         </div>
                     </div>
                         <div class="form-row">
@@ -186,85 +185,17 @@
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
                             </div>
                     </div>
-                    <h5>Contato</h5>
                     <div class="form-row">
-                      <div class="form-group col-md-6">
-                        <label for="inputempCode">Código da Empresa</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Insira o código da Empresa">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label for="inputCPF">CPF</label>
-                        <input type="number" class="form-control" id="inputCPF" placeholder="Insira o CPF">
-                      </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inpuntComp">Complemento</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Casa 71">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputCEP">CEP</label>
-                            <input type="text" class="form-control" id="inputAddress">
-                        </div>
-                    </div>
-                    </div>
-                    <div class="form-row col-md-12">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">Cidade</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-6">
-                        <label for="inputState">Estado</label>
-                        <select id="inputState" class="form-control">
-                          <option selected>Selecione...</option>
-                          <option>AC</option>
-                          <option>AL</option>
-                          <option>AM</option>
-                          <option>BA</option>
-                          <option>CE</option>
-                          <option>DF</option>
-                          <option>ES</option>
-                          <option>GO</option>
-                          <option>MA</option>
-                          <option>MT</option>
-                          <option>MS</option>
-                          <option>MG</option>
-                          <option>PA</option>
-                          <option>PB</option>
-                          <option>PR</option>
-                          <option>PE</option>
-                          <option>PI</option>
-                          <option>RJ</option>
-                          <option>RN</option>
-                          <option>RS</option>
-                          <option>RO</option>
-                          <option>RR</option>
-                          <option>SC</option>
-                          <option>SP</option>
-                          <option>SE</option>
-                          <option>TO</option>
-                      </select>
-                    </div>
-                    <div class="form-row col-md-12">
                         <div class="form-group col-md-4">
-                            <label for="inputNumber">Telefone Pessoal</label>
-                            <input type="number" class="form-control" id="inputNumber">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputNumber">Data de Nascimento</label>
+                            <label for="inputNumber">Data de Inicio</label>
                             <input type="number" class="form-control" id="inputNumber" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="form-group col-md-4">
-                          <label for="inputState">Ocupação</label>
-                          <select id="inputState" class="form-control">
-                            <option selected>Selecione...</option>
-                            <option>Empregado</option>
-                            <option>Desempregado</option>
-                          </select>
-                        </div>
+                          <label for="inputNumber">Data de Fim</label>
+                          <input type="number" class="form-control" id="inputNumber" placeholder="dd/mm/aaaa">
+                      </div>
                     </div>
-                    <button type="submit" class="btn btn-primary"><a href="./user.html" style="color: white;">Cadastrar</a></button>
-                    <label><a href="../login.html">Já tenho uma conta</a></label>
+                    <button type="submit" class="btn btn-primary"><a href="../../user.html" style="color: white;">Cadastrar</a></button>
                 </form>
                 </div>
             </div>
